@@ -14,7 +14,11 @@ class List::Node //self-referential Node class
 	   //to an object of the same type (i.e. Node)
 	
 	};//end Node class definition (can only be seen by the List class)
-
+List::List(){
+	
+    frontPtr = nullptr;
+    num_elements = 0
+	}	`
 
 List::~List()
 {
@@ -90,6 +94,5 @@ void List::remove(int k)
 	delete delPtr;
 	num_elements--;
 	}
-	
 	//Implementations of missing operations
-	
+	                  
